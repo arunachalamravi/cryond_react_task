@@ -23,9 +23,7 @@ const gtgt = [
 
 function Step1() {
     const [count, setCount] = useState(1)
-    useEffect(() => {
-        console.log(count)
-    }, [count])
+
 
     return (
         <section className='p-list'>
@@ -63,7 +61,7 @@ function Step1() {
                                             <TableCell align="right"><div className='quantity'>
                                                 <div className='addsub'>
                                                     <div className='q-flex'>
-                                                        <span className='q-sub' onClick={setCount(count - 1)}>-</span>
+                                                        <span className='q-sub' onClick={() => setCount(count - 1)}>-</span>
                                                         <span className='q-text'>{count}</span>
                                                         <span className='q-add' onClick={() => setCount(count + 1)}>+</span>
                                                     </div>

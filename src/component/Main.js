@@ -9,7 +9,7 @@ import {
     Route, Navigate
 } from "react-router-dom";
 import Productlist from './Productlist';
-import Checkout from './steps/Checkout';
+import Checkout from './steps/Checkout'
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MuiDrawer from "@mui/material/Drawer";
@@ -114,11 +114,11 @@ function Main() {
             to: '/home',
             icon: <AddBusinessIcon />
         },
-        // {
-        //   name: 'Product list',
-        //   to: '/home',
-        //   icon: <ShoppingBagIcon />
-        // },
+        {
+            name: 'Product list',
+            to: '/home',
+            icon: <ShoppingBagIcon />
+        },
 
         {
             name: 'checkout',
